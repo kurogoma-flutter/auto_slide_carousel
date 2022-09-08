@@ -42,11 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     Timer.periodic(
       // 第一引数：繰り返す間隔の時間を設定
-      const Duration(milliseconds: 10),
+      const Duration(milliseconds: 50),
       // 第二引数：その間隔ごとに動作させたい処理を書く
       (Timer timer) {
         setState(() {
-          countTimer += 10;
+          countTimer += 50;
           if (countTimer == 5000) {
             countTimer = 0;
             if (currentIndex == 4) {
